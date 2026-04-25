@@ -84,88 +84,82 @@
 
 <!-- ABOUT-->
 
-<section id="about" class="py-24 px-6 max-w-7xl mx-auto">
+<section id="about" class="py-24 px-6 max-w-7xl mx-auto relative overflow-hidden">
+  
+  <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-50 rounded-full blur-3xl -z-10 opacity-50"></div>
 
-  <div class="grid md:grid-cols-2 gap-12 items-center">
+  <div class="grid md:grid-cols-12 gap-0 items-center">
 
-    <!-- LEFT IMAGE + STATS -->
-    <div data-aos="fade-right" class="relative">
-
-      <img src="Rosalinda.jpg"
-           class="rounded-3xl shadow-lg w-full">
-
-      <!-- FLOATING BADGE -->
-      <div class="absolute top-6 -right-6 bg-blue-900 text-white p-4 rounded-xl shadow-lg text-center">
-        <p class="text-yellow-400 text-xl font-bold">10+</p>
-        <p class="text-xs">Years Experience</p>
+    <div id="meetProfile" data-aos="fade-right" class="relative z-10 md:col-span-5">
+      <div class="relative">
+        <img src="Rosalinda.jpg" 
+             class="rounded-3xl shadow-2xl w-full object-cover aspect-[4/5] md:aspect-auto">
+        
+        <div class="absolute top-8 -right-4 md:top-12 md:-right-10 bg-blue-900 text-white p-4 rounded-2xl shadow-2xl text-center w-28 h-fit z-30 border-2 border-white/10 transform hover:scale-105 transition-transform">
+  <p class="text-yellow-400 text-2xl font-bold leading-none">10+</p>
+  <p class="text-[10px] uppercase tracking-wider font-bold mt-1 leading-tight">
+    Years <br/> Experience
+  </p>
+</div>
       </div>
-
     </div>
 
-    <!-- RIGHT CONTENT -->
-    <div data-aos="fade-left">
+    <div data-aos="fade-left" class="md:col-span-7 mt-12 md:mt-0 md:-ml-12 z-20">
+      <div class="bg-white/90 backdrop-blur-md p-8 md:p-12 rounded-3xl shadow-xl border border-blue-50">
+        
+        <h2 class="text-4xl md:text-5xl font-bold text-blue-900 mb-6 leading-tight">Meet Rosalinda Jaca</h2>
 
-      <h2 class="text-4xl font-bold text-blue-900 mb-4">Meet Rosalinda Jaca</h2>
+        <p class="text-gray-600 mb-8 text-lg leading-relaxed">
+          Rosalinda Jaca is a dedicated Insurance Specialist affiliated with 
+          <span class="font-semibold text-blue-900">National Life Group</span>,
+          serving families across San Antonio with personalized solutions.
+        </p>
 
-      <p class="text-gray-600 mb-6">
-        Rosalinda Jaca is a dedicated Insurance Specialist affiliated with National Life Group,
-        serving families across San Antonio with personalized solutions.
-      </p>
+        <div class="grid sm:grid-cols-1 gap-6 mb-10">
+          <div class="flex gap-4 items-start">
+            <div class="bg-yellow-100 p-2 rounded-lg">
+              <i class="ri-shield-check-line text-yellow-600 text-2xl"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-blue-900">Trusted Advisor</h4>
+              <p class="text-sm text-gray-500">Expert in life insurance and financial protection.</p>
+            </div>
+          </div>
 
-      <!-- FEATURES -->
-      <div class="space-y-4 mb-8">
-
-        <div class="flex gap-3">
-          <i class="ri-shield-check-line text-yellow-500 text-xl"></i>
-          <div>
-            <h4 class="font-semibold">Trusted Advisor</h4>
-            <p class="text-sm text-gray-500">Expert in life insurance and financial protection.</p>
+          <div class="flex gap-4 items-start">
+            <div class="bg-yellow-100 p-2 rounded-lg">
+              <i class="ri-heart-line text-yellow-600 text-2xl"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-blue-900">Passionate About Families</h4>
+              <p class="text-sm text-gray-500">Helping families build secure futures.</p>
+            </div>
           </div>
         </div>
 
-        <div class="flex gap-3">
-          <i class="ri-heart-line text-yellow-500 text-xl"></i>
-          <div>
-            <h4 class="font-semibold">Passionate About Families</h4>
-            <p class="text-sm text-gray-500">Helping families build secure futures.</p>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3">
+          <div class="bg-blue-50/50 p-4 rounded-2xl text-center border border-blue-100">
+            <p class="text-blue-900 font-black text-xl">10+</p>
+            <p class="text-[10px] text-gray-400 uppercase font-bold">Years</p>
           </div>
-        </div>
 
-        <div class="flex gap-3">
-          <i class="ri-community-line text-yellow-500 text-xl"></i>
-          <div>
-            <h4 class="font-semibold">Community-Focused</h4>
-            <p class="text-sm text-gray-500">Serving San Antonio with care and dedication.</p>
+          <div class="bg-blue-50/50 p-4 rounded-2xl text-center border border-blue-100">
+            <p class="text-blue-900 font-black text-xl">500+</p>
+            <p class="text-[10px] text-gray-400 uppercase font-bold">Families</p>
+          </div>
+
+          <div class="bg-blue-50/50 p-4 rounded-2xl text-center border border-blue-100">
+            <p class="text-blue-900 font-black text-xl italic">SATX</p>
+            <p class="text-[10px] text-gray-400 uppercase font-bold">Location</p>
+          </div>
+
+          <div class="bg-blue-50/50 p-4 rounded-2xl text-center border border-blue-100">
+            <p class="text-blue-900 font-black text-xl">NLG</p>
+            <p class="text-[10px] text-gray-400 uppercase font-bold">Group</p>
           </div>
         </div>
 
       </div>
-
-      <!-- STATS -->
-      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-
-        <div class="bg-gray-100 p-4 rounded-xl text-center">
-          <p class="text-blue-900 font-bold text-lg">10+</p>
-          <p class="text-xs text-gray-500">Years Experience</p>
-        </div>
-
-        <div class="bg-gray-100 p-4 rounded-xl text-center">
-          <p class="text-blue-900 font-bold text-lg">500+</p>
-          <p class="text-xs text-gray-500">Families Helped</p>
-        </div>
-
-        <div class="bg-gray-100 p-4 rounded-xl text-center">
-          <p class="text-blue-900 font-bold text-lg">San Antonio</p>
-          <p class="text-xs text-gray-500">Texas, USA</p>
-        </div>
-
-        <div class="bg-gray-100 p-4 rounded-xl text-center">
-          <p class="text-blue-900 font-bold text-lg">NLG</p>
-          <p class="text-xs text-gray-500">National Life Group</p>
-        </div>
-
-      </div>
-
     </div>
 
   </div>
@@ -232,9 +226,11 @@
       </div>
 
       <!-- BUTTON -->
-      <button class="mt-10 bg-yellow-500 px-6 py-3 rounded-full font-semibold">
-        Get Insurance Consultation
-      </button>
+<a href="https://forms.gle/9fLy8qiw2f9t2A3s9"
+   target="_blank"
+   class="inline-block mt-10 bg-yellow-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-yellow-600 transition">
+  Get Insurance Consultation
+</a>
 
     </div>
 
@@ -286,9 +282,11 @@
 </div>
 
       <!-- BUTTON -->
-      <button class="mt-10 bg-blue-900 text-white px-6 py-3 rounded-full font-semibold">
-        Book a Product Demo
-      </button>
+<a href="https://forms.gle/azXcrp1164NaWu5L8"
+   target="_blank"
+   class="inline-block mt-10 bg-blue-900 text-white px-6 py-3 rounded-full font-semibold text-center">
+  Book a Product Demo
+</a>
 
     </div>
 
@@ -475,13 +473,13 @@
       <!-- BUTTONS -->
       <div class="flex flex-wrap gap-4">
 
-        <a href="https://wa.me/12107898729"
+        <a href="https://forms.gle/QZh56ZuUwyBTs88g9"
            target="_blank"
            class="bg-yellow-500 text-white px-6 py-3 rounded-full font-semibold hover:scale-105 transition">
           Book Appointment
         </a>
 
-        <a href="https://wa.me/12107898729"
+        <a href="mailto:caringneighborssanantonio@gmail.com"
            target="_blank"
            class="border border-blue-900 text-blue-900 px-6 py-3 rounded-full font-semibold hover:bg-blue-900 hover:text-white transition">
           Contact Now

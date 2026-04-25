@@ -7,3 +7,12 @@ background-image: url('san_antonio_skyline.jpg');
 .profile{
 width: 520px;
 }
+
+#meetProfile{
+  width: 320px;
+  display: center;
+}
+
+#about{
+  justify-content: center;
+}
