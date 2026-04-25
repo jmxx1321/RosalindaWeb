@@ -40,48 +40,53 @@
 </header>
 
 <!-- HERO -->
-<section id="home" class="relative min-h-screen flex items-center text-white px-6 pt-24 overflow-hidden">
+<section id="home" class="relative min-h-screen flex items-center text-white px-4 sm:px-6 pt-20 md:pt-24 overflow-hidden">
 
   <!-- BACKGROUND IMAGE -->
   <div class="absolute inset-0">
     <img src="san_antonio_skyline.jpg"
-         class="w-full h-full object-cover"
-         alt="Background">
+         class="w-full h-full object-cover object-center"
+         alt="San Antonio Skyline">
   </div>
 
   <!-- GRADIENT OVERLAY -->
-  <div class="absolute inset-0 bg-gradient-to-r from-blue-900/90 via-blue-800/70 to-blue-700/60"></div>
+  <div class="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-blue-900/90 via-blue-800/80 to-blue-700/70"></div>
 
   <!-- CONTENT -->
-  <div class="relative max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center z-10">
+  <div class="relative max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center z-10">
 
-    
     <!-- LEFT -->
-    <div>
-       <!-- TAGS -->
-      <div class="flex flex-wrap gap-3 mb-6">
-        <span class="bg-white/10 border border-white/20 px-3 py-1 rounded-full text-sm">Insurance Specialist</span>
-        <span class="bg-white/10 border border-white/20 px-3 py-1 rounded-full text-sm">Authorized Ritello Distributor</span>
-        <span class="bg-white/10 border border-white/20 px-3 py-1 rounded-full text-sm">San Antonio Local</span>
+    <div class="text-center md:text-left">
+
+      <!-- TAGS -->
+      <div class="flex flex-wrap justify-center md:justify-start gap-2 sm:gap-3 mb-4 sm:mb-6">
+        <span class="bg-white/10 border border-white/20 px-3 py-1 rounded-full text-xs sm:text-sm">Insurance Specialist</span>
+        <span class="bg-white/10 border border-white/20 px-3 py-1 rounded-full text-xs sm:text-sm">Authorized Ritello Distributor</span>
+        <span class="bg-white/10 border border-white/20 px-3 py-1 rounded-full text-xs sm:text-sm">San Antonio Local</span>
       </div>
-      <h1 class="text-4xl md:text-6xl font-bold mb-6">
+
+      <!-- TITLE -->
+      <h1 class="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 sm:mb-6 leading-tight">
         Protect Your Future.<br>
         <span class="text-yellow-400">Care for Your Home.</span>
       </h1>
-      <p class="text-white/80 mb-6">
+
+      <!-- TEXT -->
+      <p class="text-sm sm:text-base md:text-lg text-white/80 mb-6 max-w-md mx-auto md:mx-0">
         Helping families achieve financial security and healthier living.
       </p>
+
     </div>
 
     <!-- RIGHT IMAGE -->
-    <div class="profile">
-      <img src="RosalindaSuit.png" class="rounded-3xl shadow-xl">
+    <div class="flex justify-center md:justify-end">
+      <img src="RosalindaSuit.png"
+           class="w-[220px] sm:w-[280px] md:w-[380px] lg:w-[420px] rounded-3xl shadow-xl object-cover">
     </div>
 
   </div>
 
 </section>
-
 <!-- ABOUT-->
 
 <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
