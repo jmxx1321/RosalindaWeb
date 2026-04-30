@@ -25,7 +25,26 @@
   html { scroll-behavior: smooth; }
 </style>
 </head>
+<!-- SCRIPT -->
+<script>
+  let index = 0;
 
+  function showSlide(i) {
+    const carousel = document.getElementById("testimonialCarousel");
+    const total = carousel.children.length;
+
+    index = (i + total) % total;
+    carousel.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  function nextSlide() {
+    showSlide(index + 1);
+  }
+
+  function prevSlide() {
+    showSlide(index - 1);
+  }
+</script>
 <body class="font-sans text-gray-800">
 
 <!-- NAV -->
@@ -118,9 +137,9 @@
         <h2 class="text-4xl md:text-5xl font-bold text-blue-900 mb-6 leading-tight">Meet Rosalinda Jaca</h2>
 
         <p class="text-gray-600 mb-8 text-lg leading-relaxed">
-          Rosalinda Jaca is a dedicated Insurance Specialist affiliated with 
-          <span class="font-semibold text-blue-900">National Life Group</span>,
-          serving families across San Antonio with personalized solutions.
+          Rosalinda Jaca is a dedicated Living Benefits Specialist affiliated with 
+          <span class="font-semibold text-blue-900">Premiere Financial Alliance</span>,
+          serving families across Texas with personalized solutions.
         </p>
 
         <div class="space-y-6 mb-10">
@@ -130,7 +149,7 @@
             </div>
             <div>
               <h4 class="font-bold text-blue-900 text-lg leading-snug">Trusted Advisor</h4>
-              <p class="text-gray-500">Expert in life insurance and financial protection.</p>
+              <p class="text-gray-500">Providing protection that goes beyond the future offering living benefits insurance you can actually use while living</p>
             </div>
           </div>
 
@@ -140,7 +159,7 @@
             </div>
             <div>
               <h4 class="font-bold text-blue-900 text-lg leading-snug">Passionate About Families</h4>
-              <p class="text-gray-500">Helping families build secure futures.</p>
+              <p class="text-gray-500">Empowering families to create lasting financial security</p>
             </div>
           </div>
 
@@ -150,11 +169,11 @@
             </div>
             <div>
               <h4 class="font-bold text-blue-900 text-lg leading-snug">Community-Focused</h4>
-              <p class="text-gray-500">Serving San Antonio with care and dedication.</p>
+              <p class="text-gray-500">Based in Texas and expanding services across the nation</p>
             </div>
           </div>
         </div>
-
+<!-- cross out
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 border-t border-gray-100 pt-8">
           <div class="bg-gray-50 p-4 rounded-2xl text-center">
             <p class="text-blue-900 font-black text-xl">10+</p>
@@ -176,7 +195,7 @@
             <p class="text-[10px] text-gray-400 uppercase font-bold tracking-widest">Group</p>
           </div>
         </div>
-
+-->
       </div>
     </div>
   </div>
@@ -204,7 +223,7 @@
       <p class="text-yellow-400 text-sm uppercase mb-2">Insurance & Finance</p>
       <h3 class="text-2xl font-bold mb-2">Financial Security Services</h3>
       <p class="text-white/70 mb-8">
-        Long-term security and peace of mind for your family — because protecting what matters most is our priority.
+        Long-term security and peace of mind for your family because protecting what matters most is our priority.
       </p>
 
       <!-- ITEMS -->
@@ -215,7 +234,7 @@
           <div>
             <h4 class="font-semibold">Life Insurance</h4>
             <p class="text-sm text-white/70">
-              Comprehensive life insurance plans tailored to protect your loved ones and secure their financial future.
+              Smart life insurance plans with built-in living benefits to protect your family and give you access to accelerated benefit while you’re alive.
             </p>
           </div>
         </div>
@@ -325,7 +344,7 @@
       </h2>
 
       <p class="text-gray-500 mb-10">
-        Choosing the right advisor is one of the most important decisions you'll make. Here's why hundreds of San Antonio families choose Rosalinda Jaca.
+        Choosing the right advisor matters. Here’s why clients continue to choose Rosalinda Jaca.
       </p>
 
       <div class="grid sm:grid-cols-2 gap-6">
@@ -336,7 +355,7 @@
           <div>
             <h4 class="font-semibold">Trusted Advisor</h4>
             <p class="text-sm text-gray-500">
-              Licensed and affiliated with National Life Group, Rosalinda brings credibility and expertise you can count on.
+              Licensed and affiliated with Premiere Financial Alliance Group, Rosalinda brings credibility and expertise you can count on.
             </p>
           </div>
         </div>
@@ -386,7 +405,7 @@
           <div>
             <h4 class="font-semibold">Proven Track Record</h4>
             <p class="text-sm text-gray-500">
-              Over 500 families served with a 98% satisfaction rate — results that speak for themselves.
+              Serving families with care, dedication, and a commitment to excellent results.
             </p>
           </div>
         </div>
@@ -395,17 +414,18 @@
 
     </div>
 
-    <!-- RIGHT IMAGE -->
-    <div data-aos="fade-left" class="relative">
+    <!-- RIGHT CAROUSEL -->
+<div data-aos="fade-left" class="relative overflow-hidden">
 
+  <div  id="testimonialCarousel" class="flex transition-transform duration-500 ease-in-out">
+
+    <!-- SLIDE 1 -->
+    <div class="min-w-full relative">
       <img src="ritelloDemo.jpeg"
            class="rounded-3xl shadow-xl w-full object-cover">
 
-      <!-- TESTIMONIAL CARD -->
       <div class="absolute bottom-6 left-6 bg-white p-4 rounded-xl shadow-lg max-w-xs">
-        <div class="flex text-yellow-400 text-sm mb-2">
-          ★★★★★
-        </div>
+        <div class="flex text-yellow-400 text-sm mb-2">★★★★★</div>
         <p class="text-xs text-gray-600 italic">
           "Rosalinda made the whole process easy and stress-free!"
         </p>
@@ -413,8 +433,38 @@
           — Maria G., San Antonio
         </p>
       </div>
-
     </div>
+
+    <!-- SLIDE 2 -->
+    <div class="min-w-full relative">
+      <img src="ritelloDemo2.jpeg"
+           class="rounded-3xl shadow-xl w-full object-cover">
+
+      <div class="absolute bottom-6 left-6 bg-white p-4 rounded-xl shadow-lg max-w-xs">
+        <div class="flex text-yellow-400 text-sm mb-2">★★★★★</div>
+        <p class="text-xs text-gray-600 italic">
+          "Very professional and explained everything clearly. Highly recommended!"
+        </p>
+        <p class="text-xs font-semibold mt-2 text-blue-900">
+          — John D., Texas
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CONTROLS -->
+  <button onclick="prevSlide()" 
+          class="absolute left-3 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow">
+    ‹
+  </button>
+
+  <button onclick="nextSlide()" 
+          class="absolute right-3 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow">
+    ›
+  </button>
+
+</div>
 
   </div>
 
